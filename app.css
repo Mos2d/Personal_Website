@@ -1,0 +1,40 @@
+.intro {
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-image: URL("https://media-exp1.licdn.com/dms/image/C4E03AQEO4Nj3UtpE2A/profile-displayphoto-shrink_100_100/0/1628331834184?e=1655337600&v=beta&t=XsUxthW3JMjR69ooWPVcsaEBpqXWyaAIF-AFs5qu0Hc"); */
+}
+
+.full-height {
+    height: 100vh;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+h3 {
+    text-align: center;
+}
+
+.vertical-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#about>div>p{
+    width: 80%;
+    padding: 5%;
+    border-radius: 8px;
+    background-color:rgb(188, 188, 188, 0.2);
+}
+
+.profile-pic {
+    width: 20%;
+    border-radius: 50%;
+    margin-bottom: 5%;
+}
