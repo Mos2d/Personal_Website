@@ -8,6 +8,7 @@ showSlides(slideIndex, "mySlides6", "dot6");
 showSlides(slideIndex, "mySlides7", "dot7");
 showSlides(slideIndex, "mySlides8", "dot8");
 showSlides(slideIndex, "mySlides9", "dot9");
+showSlides(slideIndex, "mySlides10", "dot10");
 
 // Next/previous controls
 function plusSlides(n, slidesClassName, dotClassName) {

@@ -224,7 +224,7 @@ body {
     padding-bottom: 5%;
 }
 
-.mySlides, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7, .mySlides8, .mySlides9 {
+.mySlides, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7, .mySlides8, .mySlides9, .mySlides10 {
     height: fit-content;
     width: 100%;
     display: none;
@@ -264,7 +264,7 @@ body {
   text-align: center;
 }
 
-.dot, .dot2, .dot3, .dot4, .dot5, .dot6, .dot7, .dot8, .dot9 {
+.dot, .dot2, .dot3, .dot4, .dot5, .dot6, .dot7, .dot8, .dot9, .dot10 {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -275,7 +275,7 @@ body {
   transition: background-color 0.6s ease;
 }
 
-.active-dot, .dot:hover, .dot2:hover, .dot3:hover, .dot4:hover, .dot5:hover, .dot6:hover, .dot7:hover, .dot8:hover, .dot9:hover {
+.active-dot, .dot:hover, .dot2:hover, .dot3:hover, .dot4:hover, .dot5:hover, .dot6:hover, .dot7:hover, .dot8:hover, .dot9:hover, .dot10:hover {
   background-color: var(--yellow);
 }
 
