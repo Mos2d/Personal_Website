@@ -53,11 +53,11 @@ body {
 /*-------------------- MAIN SECTIONS TEMPLATES ----------------------*/
 
 .bg-img {
-    background-image: url("bg.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("images/bg.png") !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
 }
 
 .full-height {
@@ -68,6 +68,7 @@ body {
     justify-content: flex-start;
     min-height: 100vh;
     padding-bottom: 5%;
+    background: linear-gradient(50deg, var(--white), rgb(231, 238, 255));
 }
 
 .vertical-container {
@@ -89,7 +90,7 @@ body {
 /*-------------------- INTRO ------------------------*/
 
 #intro {
-    margin-top: 7%;
+    padding-top: 7%;
     padding-bottom: 10%;
     display: flex;
     flex-direction: column;
@@ -224,7 +225,7 @@ body {
     padding-bottom: 5%;
 }
 
-.mySlides, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7, .mySlides8, .mySlides9, .mySlides10 {
+.mySlides, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7, .mySlides8, .mySlides9, .mySlides10, .mySlides11 {
     height: fit-content;
     width: 100%;
     display: none;
@@ -264,7 +265,7 @@ body {
   text-align: center;
 }
 
-.dot, .dot2, .dot3, .dot4, .dot5, .dot6, .dot7, .dot8, .dot9, .dot10 {
+.dot, .dot2, .dot3, .dot4, .dot5, .dot6, .dot7, .dot8, .dot9, .dot10, .dot11 {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -275,7 +276,7 @@ body {
   transition: background-color 0.6s ease;
 }
 
-.active-dot, .dot:hover, .dot2:hover, .dot3:hover, .dot4:hover, .dot5:hover, .dot6:hover, .dot7:hover, .dot8:hover, .dot9:hover, .dot10:hover {
+.active-dot, .dot:hover, .dot2:hover, .dot3:hover, .dot4:hover, .dot5:hover, .dot6:hover, .dot7:hover, .dot8:hover, .dot9:hover, .dot10:hover, .dot11:hover {
   background-color: var(--yellow);
 }
 
@@ -382,6 +383,16 @@ h6 {
     color: white;
     padding: 1rem 1rem;
     border-radius: 10%;
+}
+
+.fa-envelope {
+    color: rgb(28, 111, 255);
+    border-radius: 10px;
+}
+
+.fa-envelope:hover {
+    color: rgb(20, 96, 226);
+    border-radius: 10px;
 }
 
 
