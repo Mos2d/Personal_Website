@@ -10,6 +10,7 @@ showSlides(slideIndex, "mySlides8", "dot8");
 showSlides(slideIndex, "mySlides9", "dot9");
 showSlides(slideIndex, "mySlides10", "dot10");
 showSlides(slideIndex, "mySlides11", "dot11");
+showSlides(slideIndex, "mySlides12", "dot12");
 
 // Next/previous controls
 function plusSlides(n, slidesClassName, dotClassName) {
@@ -35,4 +36,17 @@ function showSlides(n, slidesClassName, dotClassName) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active-dot";
+}
+
+var prevScrollPosition = window.pageYOffset;
+
+window.onscroll = function() {
+  var currScrollPosition = window.pageYOffset;
+let navbarHeight = 0 - document.getElementById("navbar").offsetHeight;
+  if (currScrollPosition < prevScrollPosition) {
+    document.getElementById("navbar").style.top = "0px";
+  } else {
+    document.getElementById("navbar").style.top = navbarHeight + "px";
+  }
+  prevScrollPosition = currScrollPosition;
 }
