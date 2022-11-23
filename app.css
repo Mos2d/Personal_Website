@@ -439,3 +439,19 @@ h6 {
   .fade-in.appear {
     opacity: 1;
   }
+
+.button {
+    border-radius: 10px;
+    background-color: rgb(92, 213, 92);
+    padding: 0.5% 1%;
+    color: white;
+    width: max-content;
+    transition: background-color 200ms ease-in;
+    box-shadow: rgb(181, 181, 181) 3px 3px 5px;
+}
+
+.button:hover {
+    background-color: rgb(66, 162, 66);
+    color: white;
+    text-decoration: none;
+}
