@@ -56,7 +56,8 @@ const faders = document.querySelectorAll('.fade-in');
 console.log(faders);
 
 const appearOptions = {
-  threshold: 0.7
+  threshold: 0.7,
+  rootMargin: "0px 0px 10% 0px"
 };
 
 const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
@@ -74,3 +75,24 @@ faders.forEach(fader => {
   appearOnScroll.observe(fader);
 })
 
+// pop-up
+
+var modal = document.getElementById("myModal");
+
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

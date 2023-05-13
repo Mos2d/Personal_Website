@@ -19,6 +19,7 @@ body {
     --purple: #8338ec;
     --pink: #ff006e;
 }
+
 /*---------------------- NAVBAR ---------------------*/
 
 .navbar-brand {
@@ -173,6 +174,20 @@ body {
 .checked {
     color: var(--yellow);
 }
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 /*------------------PROJECTS----------------------*/
 
@@ -433,10 +448,12 @@ h6 {
 
   .fade-in {
     opacity: 0;
-    transition: opacity 300ms ease-in;
+    transform: translateY(10%);
+    transition: opacity 700ms ease-in, transform 500ms ease-in;
   }
 
   .fade-in.appear {
+    transform: translateY(0);
     opacity: 1;
   }
 
