@@ -601,15 +601,35 @@ h6 {
     }
   }
 
+  @media only screen and (max-width: 1430px) {
+    .about-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-container > div {
+        justify-content: center !important;
+    }
+    .profile-pic {
+        width: 50vw;
+        height: 50vw;
+    }
+  }
+
   @media only screen and (max-width: 600px) {
     .typewriter {
       font-size: 1.5em;
       letter-spacing: 0.13rem;
     }
-  }
-  @media only screen and (max-width: 400px) {
+    .back {
+        font-size: 5rem;
+    }
+}
+@media only screen and (max-width: 400px) {
     .typewriter {
-      font-size: 1em;
-      letter-spacing: 0.08rem;
+        font-size: 1em;
+        letter-spacing: 0.08rem;
+    }
+    .back {
+        font-size: 3rem;
     }
   }
