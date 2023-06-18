@@ -581,17 +581,46 @@ h6 {
   
   .typewriter {
     width: 28ch;
-    animation: typing 2s steps(28), blink .5s step-end infinite alternate;
+    animation: typing 2s steps(28) infinite, blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid orange;
     letter-spacing: 0.17rem;
     font-size: 2em;
   }
+
+  .typewriter::after {
+    content: "";
+    animation: words 10s infinite;
+  }
   
   @keyframes typing {
     from {
       width: 0
+    }
+    60% {
+        width: 100%;
+    }
+    100% {
+        width: 100%;
+    }
+  }
+
+  @keyframes words {
+    0%,20% {
+        content: "Software Engineering Student";
+    }
+    21%,40% {
+        content: "Game Developer";
+    }
+    41%,60% {
+        content: "Full-Stack Developer";
+    }
+    61%,80% {
+        content: "Front-End Developer";
+    }
+    81%,100% {
+        content: "Back-End Developer";
     }
   }
       
@@ -600,6 +629,8 @@ h6 {
       border-color: transparent
     }
   }
+
+  /* Responsive */
 
   @media only screen and (max-width: 1430px) {
     .about-container {
