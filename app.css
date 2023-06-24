@@ -284,6 +284,23 @@ Copyright 2017. All Rights Reserved.
     cursor: pointer;
 }
 
+/*----------------- PORTFOLIO --------------------*/
+
+.grid-container {
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    row-gap: 40px;
+    column-gap: 40px;
+}
+
+.grid-container > img {
+    width: 20vw;
+    height: 20vw;
+    background-size: cover;
+}
+
 /*------------------PROJECTS----------------------*/
 
 .project-title, .accomplishment-title, .activity-title, .work-title {
@@ -619,14 +636,14 @@ h6 {
     border-radius: 20px;
     background-color: transparent;
     border: 1px solid orange;
-    color: orange;
+    color: orange !important;
     transition: all 0.2s ease-in-out;
     padding: 2px 10px 4px 10px;
     margin: 0 10px;
 }
 
 .curved-btn:hover {
-    color: black;
+    color: black !important;
     background-color: orange;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
