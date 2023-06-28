@@ -21,13 +21,10 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto justify-content-center">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav justify-content-end">
             <li class="nav-item">
                 <a class="nav-link" href="#about">ABOUT <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#skills">SKILLS</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#portfolio">PORTFOLIO</a>
@@ -66,8 +63,8 @@
                     </div>
                 </div>
         
-                <div class="col d-flex justify-content-start fade-in">
-                    <p class="about-content">
+                <div class="col d-flex justify-content-start">
+                    <p class="about-content fade-in">
                         I'm a Software Engineering student at McGill University and have been in the coding world for over five years. Outside of coding, I have a creative side that loves to draw, and I also enjoy challenging my strategic thinking with chess. Not just confined to the intellectual realm, I'm also a professional Taekwondo player and have proudly participated in numerous championships, winning many medals along the way. I consider myself to be determined and always keen on learning new things. I'm enthusiastic about learning, growing, and applying my varied skills wherever I can.
                     </p>
                 </div>
@@ -90,46 +87,72 @@
         </div>
 
         <div class="grid-container">
-            <img class="rounded" src="images/atari-1.png" alt="">
-            <img class="rounded" src="images/Beta1.png" alt="">
-            <img class="rounded" src="images/Storiko1.png" alt="">
-            <img class="rounded" src="images/climbsafe1.png" alt="">
-            <img class="rounded" src="images/codepen1.png" alt="">
-            <img class="rounded" src="images/codepen2.png" alt="">
-            <img class="rounded" src="images/codepen3.png" alt="">
-            <img class="rounded" src="images/codepen4.png" alt="">
-            <img class="rounded" src="images/crazy-baby-1.png" alt="">
+            <img class="image rounded fade-in" src="images/atari-1.png" alt="">
+            <img class="image rounded fade-in" src="images/Beta1.png" alt="">
+            <img class="image rounded fade-in" src="images/Storiko1.png" alt="">
+            <img class="image rounded fade-in" src="images/climbsafe1.png" alt="">
+            <img class="image rounded fade-in" src="images/codepen1.png" alt="">
+            <img class="image rounded fade-in" src="images/codepen2.png" alt="">
+            <img class="image rounded fade-in" src="images/codepen3.png" alt="">
+            <img class="image rounded fade-in" src="images/codepen4.png" alt="">
+            <img class="image rounded fade-in" src="images/crazy-baby-1.png" alt="">
         </div>
 
     </section>
 
-    <section class="full-height container-fluid" id="contact">
+    <section class="full-height container-fluid d-flex flex-column justify-content-between" id="contact">
         <div class="title fade-in">
             <div class="front">Contact Me</div>
             <div class="back">CONTACT</div>
-        </div>
-        <div class="container">
+        </div> 
+        <div class="container-fluid">
             <div class="row">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <input class="contact-input" type="text" class="form-control" placeholder="Name">
+                <!-- <div class="col-3">
+                    <div class="d-flex flex-column justify-content-center align-items-start">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <i class="fa fa-envelope"></i> 
+                            <p class="contact-text">youssof.mohamed@mail.mcgill.ca</p>
                         </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <i class="fa fa-mobile"></i>
+                            <p class="contact-text"> Call +1 (438) 930-1444</p>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="email-form container-fluid col">
+                    <div class="row">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col">
+                                    <input class="contact-input" type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="col">
+                                    <input class="contact-input" type="text" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-100"></div>
                         <div class="col">
-                            <input class="contact-input" type="text" class="form-control" placeholder="Email">
+                            <input class="contact-input" type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col">
+                            <textarea id="msg-input" class="contact-input" type="text" class="form-control" placeholder="Message"></textarea>
                         </div>
                     </div>
                 </div>
-                <div class="w-100"></div>
-                <div class="col">
-                    <input class="contact-input" type="text" class="form-control" placeholder="Subject">
-                </div>
-                <div class="w-100"></div>
-                <div class="col">
-                    <textarea id="msg-input" class="contact-input" type="text" class="form-control" placeholder="Message"></textarea>
-                </div>
             </div>
         </div>
+        <!-- <div class="d-flex justify-content-center p-0">
+            <div class="d-flex flex-column align-items-center m-3">
+                <i class="fa fa-envelope"></i> 
+                <p class="contact-text">youssof.mohamed@mail.mcgill.ca</p>
+            </div>
+            <div class="d-flex flex-column align-items-center m-3">
+                <i class="fa fa-mobile"></i>
+                <p class="contact-text">+1 (438) 930-1444</p>
+            </div>
+        </div> -->
         <div class="content">
             <div class="fade-in d-flex justify-content-center align-items-center p-0 mt-4">
                 <div>
@@ -145,7 +168,7 @@
                     <a href="https://www.instagram.com/youssof_masoud/" class="fa fa-instagram"></a>
                 </div>
             </div>
-            <div class="fade-in d-flex justify-content-center p-0 mt-5 download">
+            <div class="fade-in d-flex justify-content-center p-0 mt-4 download">
                 <a class="button" href="/files/Youssof Mohamed - 'Resume'.pdf" download>Download CV</a>
             </div>
         </div>
