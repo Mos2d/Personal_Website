@@ -15,7 +15,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top justify-content-between" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top justify-content-between m-0" id="navbar">
         <a class="navbar-brand" href="#">Y<span style="color: #fca311">M</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -79,25 +79,139 @@
             <div class="back">PORTFOLIO</div>
         </div>
 
-        <div class="d-flex justify-content-center p-0">
-            <a type="button" class="curved-btn">All</a>
-            <a type="button" class="curved-btn">Work Experience</a>
-            <a type="button" class="curved-btn">Projects</a>
-            <a type="button" class="curved-btn">Activities</a>
+        <div class="d-flex justify-content-center p-0 fade-in">
+            <a type="button" id="all-btn" class="curved-btn">All</a>
+            <a type="button" id="work-btn" class="curved-btn">Work Experience</a>
+            <a type="button" id="project-btn" class="curved-btn">Projects</a>
+            <a type="button" id="activity-btn" class="curved-btn">Activities</a>
         </div>
 
-        <div class="grid-container">
-            <img class="image rounded fade-in" src="images/atari-1.png" alt="">
-            <img class="image rounded fade-in" src="images/Beta1.png" alt="">
-            <img class="image rounded fade-in" src="images/Storiko1.png" alt="">
-            <img class="image rounded fade-in" src="images/climbsafe1.png" alt="">
-            <img class="image rounded fade-in" src="images/codepen1.png" alt="">
-            <img class="image rounded fade-in" src="images/codepen2.png" alt="">
-            <img class="image rounded fade-in" src="images/codepen3.png" alt="">
-            <img class="image rounded fade-in" src="images/codepen4.png" alt="">
-            <img class="image rounded fade-in" src="images/crazy-baby-1.png" alt="">
+        <div class="container">
+            <div class="grid-container">
+                <a href="https://play.google.com/store/search?q=rehlatie&c=apps" class="work-img">
+                    <div class="img-container fade-in rounded">
+                        <img class="image" src="images/rehlatie.png" alt="">
+                        <div class="img-shadow"></div>
+                        <div class="overlay d-flex flex-column justify-content-center align-items-center p-2">
+                            <h1>REHLATIE</h1>
+                            <p>Unity, C#, uGUI</p>
+                            <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur non error, maiores magnam officiis saepe ipsa deserunt explicabo, architecto ipsam perferendis numquam, quidem voluptate earum placeat autem ut? Provident, quis!</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://mos2d.itch.io/atari-remastered" class="project-img">
+                    <div class="img-container fade-in rounded">
+                        <img class="image" src="images/atari.png" alt="">
+                        <div class="img-shadow"></div>
+                        <div class="overlay d-flex flex-column justify-content-center align-items-center p-2">
+                            <h1>ATARI</h1>
+                            <p>Unity, C#</p>
+                            <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur non error, maiores magnam officiis saepe ipsa deserunt explicabo, architecto ipsam perferendis numquam, quidem voluptate earum placeat autem ut? Provident, quis!</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://mos2d.itch.io/beta-karlson" class="project-img">
+                    <div class="img-container fade-in rounded">
+                        <img class="image" src="images/beta.png" alt="">
+                        <div class="img-shadow"></div>
+                        <div class="overlay d-flex flex-column justify-content-center align-items-center p-2">
+                            <h1>BETA</h1>
+                            <p>Unity, C#</p>
+                            <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur non error, maiores magnam officiis saepe ipsa deserunt explicabo, architecto ipsam perferendis numquam, quidem voluptate earum placeat autem ut? Provident, quis!</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/F2021-ECSE223/ecse223-group-project-p16" class="project-img">
+                    <div class="img-container fade-in rounded">
+                        <img class="image" src="images/climbsafe1.png" alt="">
+                        <div class="img-shadow"></div>
+                        <div class="overlay d-flex flex-column justify-content-center align-items-center p-2">
+                            <h1>CLIMBSAFE</h1>
+                            <p>Java, JavaFX, Gherkin, JUnit, UML</p>
+                            <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur non error, maiores magnam officiis saepe ipsa deserunt explicabo, architecto ipsam perferendis numquam, quidem voluptate earum placeat autem ut? Provident, quis!</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://codepen.io/your-work" class="project-img">
+                    <div class="img-container fade-in rounded">
+                        <img class="image" src="images/codepen.jpg" alt="">
+                        <div class="img-shadow"></div>
+                        <div class="overlay d-flex flex-column justify-content-center align-items-center p-2">
+                            <h1>CODEPEN</h1>
+                            <p>HTML, CSS</p>
+                            <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur non error, maiores magnam officiis saepe ipsa deserunt explicabo, architecto ipsam perferendis numquam, quidem voluptate earum placeat autem ut? Provident, quis!</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://mos2d.itch.io/crazy-baby" class="project-img">
+                    <div class="img-container fade-in rounded">
+                        <img class="image" src="images/crazy-baby-1.png" alt="">
+                        <div class="img-shadow"></div>
+                        <div class="overlay d-flex flex-column justify-content-center align-items-center p-2">
+                            <h1>CRAZY BABY</h1>
+                            <p>Unity, C#</p>
+                            <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur non error, maiores magnam officiis saepe ipsa deserunt explicabo, architecto ipsam perferendis numquam, quidem voluptate earum placeat autem ut? Provident, quis!</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/Mos2d/Email_Writer" class="project-img">
+                    <div class="img-container fade-in rounded">
+                        <img class="image" src="images/email-writer.png" alt="">
+                        <div class="img-shadow"></div>
+                        <div class="overlay d-flex flex-column justify-content-center align-items-center p-2">
+                            <h1>EMAIL WRITER</h1>
+                            <p>HTML, CSS, JavaScript, NodeJS</p>
+                            <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur non error, maiores magnam officiis saepe ipsa deserunt explicabo, architecto ipsam perferendis numquam, quidem voluptate earum placeat autem ut? Provident, quis!</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="activity-img">
+                    <div class="img-container fade-in rounded">
+                        <img class="image" src="images/robot2.jpg" alt="">
+                        <div class="img-shadow"></div>
+                        <div class="overlay d-flex flex-column justify-content-center align-items-center p-2">
+                            <h1>ROBOGAMES</h1>
+                            <p>Arduino</p>
+                            <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur non error, maiores magnam officiis saepe ipsa deserunt explicabo, architecto ipsam perferendis numquam, quidem voluptate earum placeat autem ut? Provident, quis!</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/McGill-ECSE321-Winter2022/project-group-group-14" class="project-img">
+                    <div class="img-container fade-in rounded">
+                        <img class="image" src="images/Storiko1.png" alt="">
+                        <div class="img-shadow"></div>
+                        <div class="overlay d-flex flex-column justify-content-center align-items-center p-2">
+                            <h1>STORIKO</h1>
+                            <p>Java, UML, Postgres, Hibernate, SpringBoot, Gradle, JUnit, Heroku, Vue.js, Android Studio</p>
+                            <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur non error, maiores magnam officiis saepe ipsa deserunt explicabo, architecto ipsam perferendis numquam, quidem voluptate earum placeat autem ut? Provident, quis!</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="activity-img">
+                    <div class="img-container fade-in rounded">
+                        <img class="image" src="images/taek7.jpg" alt="">
+                        <div class="img-shadow"></div>
+                        <div class="overlay d-flex flex-column justify-content-center align-items-center p-2">
+                            <h1>TAEKWONDO</h1>
+                            <p></p>
+                            <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur non error, maiores magnam officiis saepe ipsa deserunt explicabo, architecto ipsam perferendis numquam, quidem voluptate earum placeat autem ut? Provident, quis!</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="activity-img">
+                    <div class="img-container fade-in rounded">
+                        <img class="image" src="images/soccer.jpg" alt="">
+                        <div class="img-shadow"></div>
+                        <div class="overlay d-flex flex-column justify-content-center align-items-center p-2">
+                            <h1>SOCCER</h1>
+                            <p></p>
+                            <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur non error, maiores magnam officiis saepe ipsa deserunt explicabo, architecto ipsam perferendis numquam, quidem voluptate earum placeat autem ut? Provident, quis!</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
-
+        
     </section>
 
     <section class="full-height container-fluid d-flex flex-column justify-content-between" id="contact">
@@ -122,7 +236,7 @@
                 <div class="email-form container-fluid col">
                     <div class="row">
                         <div class="container-fluid">
-                            <div class="row">
+                            <div class="row fade-in">
                                 <div class="col">
                                     <input class="contact-input" type="text" class="form-control" placeholder="Name">
                                 </div>
@@ -132,12 +246,15 @@
                             </div>
                         </div>
                         <div class="w-100"></div>
-                        <div class="col">
+                        <div class="col fade-in">
                             <input class="contact-input" type="text" class="form-control" placeholder="Subject">
                         </div>
                         <div class="w-100"></div>
-                        <div class="col">
+                        <div class="col fade-in">
                             <textarea id="msg-input" class="contact-input" type="text" class="form-control" placeholder="Message"></textarea>
+                        </div>
+                        <div class="container-fluid d-flex justify-content-end fade-in">
+                            <button class="send-btn">Send</button>
                         </div>
                     </div>
                 </div>
@@ -169,7 +286,7 @@
                 </div>
             </div>
             <div class="fade-in d-flex justify-content-center p-0 mt-4 download">
-                <a class="button" href="/files/Youssof Mohamed - 'Resume'.pdf" download>Download CV</a>
+                <a class="button" href="/files/CV.pdf" download>Download CV</a>
             </div>
         </div>
 

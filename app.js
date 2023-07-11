@@ -55,8 +55,6 @@ window.onscroll = function() {
 
 const faders = document.querySelectorAll('.fade-in');
 
-console.log(faders);
-
 const appearOptions = {
   threshold: 0.7,
   rootMargin: "0px 0px 10% 0px"
@@ -76,6 +74,76 @@ const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll
 faders.forEach(fader => {
   appearOnScroll.observe(fader);
 })
+
+// function show_all() {
+//   project_images.forEach(image => {
+//     image.style.display = 'inline-block';
+//   });
+//   work_images.forEach(image => {
+//     image.style.display = 'inline-block';
+//   });
+//   activity_images.forEach(image => {
+//     image.style.display = 'inline-block';
+//   });
+// }
+
+var all_button = document.getElementById('all-btn');
+var project_button = document.getElementById('project-btn');
+var work_button = document.getElementById('work-btn');
+var activity_button = document.getElementById('activity-btn');
+var project_images = document.querySelectorAll('.project-img');
+var work_images = document.querySelectorAll('.work-img');
+var activity_images = document.querySelectorAll('.activity-img');
+
+all_button.addEventListener('click', function() {
+  project_images.forEach(image => {
+    image.style.display = 'inline-block';
+  });
+  work_images.forEach(image => {
+    image.style.display = 'inline-block';
+  });
+  activity_images.forEach(image => {
+    image.style.display = 'inline-block';
+  });
+});
+
+project_button.addEventListener('click', function() {
+  project_images.forEach(image => {
+    image.style.display = 'inline-block';
+  });
+  work_images.forEach(image => {
+    image.style.display = 'none';
+  });
+  activity_images.forEach(image => {
+    image.style.display = 'none';
+  });
+});
+
+work_button.addEventListener('click', function() {
+  project_images.forEach(image => {
+    image.style.display = 'none';
+  });
+  work_images.forEach(image => {
+    image.style.display = 'inline-block';
+  });
+  activity_images.forEach(image => {
+    image.style.display = 'none';
+  });
+});
+
+activity_button.addEventListener('click', function() {
+  project_images.forEach(image => {
+    image.style.display = 'none';
+  });
+  work_images.forEach(image => {
+    image.style.display = 'none';
+  });
+  activity_images.forEach(image => {
+    image.style.display = 'inline-block';
+  });
+});
+
+
 
 // pop-up
 
