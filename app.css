@@ -132,7 +132,7 @@ Copyright 2017. All Rights Reserved.
     height: 25vw;
     width: 25vw;
     margin: 50px;
-    background-image: url(images/profile-photo.jpg);
+    background-image: url(images/mont-tremblent-2.jpg);
     background-size: cover;
     position: relative;
 }
@@ -564,9 +564,9 @@ h6 {
     color: orange;
 }
 
-.fa-envelope {
-    /* font-size: 2rem !important; */
-}
+/* .fa-envelope {
+    font-size: 2rem !important; 
+} */
 .fa:hover {
     transform: translateY(-0.7rem);
     transition: all .3s;
