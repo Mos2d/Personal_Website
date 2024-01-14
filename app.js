@@ -91,9 +91,9 @@ var all_button = document.getElementById('all-btn');
 var project_button = document.getElementById('project-btn');
 var work_button = document.getElementById('work-btn');
 var activity_button = document.getElementById('activity-btn');
-var project_images = document.querySelectorAll('.project-img');
-var work_images = document.querySelectorAll('.work-img');
-var activity_images = document.querySelectorAll('.activity-img');
+var project_images = document.querySelectorAll('.web-dev-img');
+var work_images = document.querySelectorAll('.game-dev-img');
+var activity_images = document.querySelectorAll('.other-img');
 
 all_button.addEventListener('click', function() {
   project_images.forEach(image => {

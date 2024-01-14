@@ -170,6 +170,12 @@ Copyright 2017. All Rights Reserved.
 
 /*--------------------- ABOUT ---------------------*/
 
+.orange {
+    color: orange;
+    font-style: italic;
+    /* font-weight: bold; */
+}
+
 #about {
     background-color: #242423;
 }
@@ -177,7 +183,7 @@ Copyright 2017. All Rights Reserved.
 .about-content{
     text-align: justify;
     text-align-last: center;
-    font-size: 1.2em;
+    font-size: 2em;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: white;
@@ -744,36 +750,31 @@ h6 {
 
   .typewriter::after {
     content: "";
-    animation: words 10s infinite;
+    animation: words 6s infinite;
   }
   
   @keyframes typing {
     from {
-      width: 0
+      width: 0;
     }
-    60% {
-        width: 100%;
+    50% {
+      width: 100%;
     }
-    100% {
-        width: 100%;
+    to {
+      width: 100%;
     }
   }
+  
 
   @keyframes words {
-    0%,20% {
+    0%,33% {
         content: "Software Engineering Student";
     }
-    21%,40% {
+    34%,67% {
         content: "Game Developer";
     }
-    41%,60% {
-        content: "Full-Stack Developer";
-    }
-    61%,80% {
-        content: "Front-End Developer";
-    }
-    81%,100% {
-        content: "Back-End Developer";
+    68%,100% {
+        content: "Web Developer";
     }
   }
       
